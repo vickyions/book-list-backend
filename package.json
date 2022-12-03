@@ -1,0 +1,29 @@
+{
+  "name": "book-list-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickyions/book-list-backend.git"
+  },
+  "author": "Vicky Soni",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/vickyions/book-list-backend/issues"
+  },
+  "homepage": "https://github.com/vickyions/book-list-backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.5"
+  }
+}
