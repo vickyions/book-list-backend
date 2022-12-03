@@ -3,6 +3,8 @@ const app = express();
 
 const registerRoute = require("./routes/register");
 const loginRoute = require("./routes/login");
+const auth = require("./routes/auth");
+const bookRoute = require("./routes/book");
 
 const cors = require('cors');
 
@@ -17,5 +19,8 @@ app.get("/", (_req, res) => {
 
 app.use("/register", registerRoute);
 app.use("/login", loginRoute);
+
+app.use("/books", auth);
+app.use("/books", bookRoute);
 
 module.exports = app;

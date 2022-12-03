@@ -13,7 +13,7 @@ const auth = (req, res, next) => {
 
         const accToken = authStr.split(" ")[1];
         const decoded = verify(accToken, SECRET);
-        req.payload = {userId: decoded, username: decoded.username};
+        req.payload = {userId: decoded.userId, username: decoded.username};
         next();
     } catch(err) {
         if (err.name ==="JsonWebTokenError") {
