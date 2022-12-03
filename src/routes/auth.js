@@ -17,7 +17,7 @@ const auth = (req, res, next) => {
         next();
     } catch(err) {
         if (err.name ==="JsonWebTokenError") {
-            res.status(401).json({
+            return  res.status(401).json({
                 status: "failed",
                 message: err.message
             })
